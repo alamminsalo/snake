@@ -62,11 +62,12 @@ public class SnakeTest {
         System.out.println("getX");
         int i = 0;
         Snake instance = new Snake();
+        instance.initializeGame(30);
         int expResult = 0;
         int result = instance.getX(i);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -77,11 +78,12 @@ public class SnakeTest {
         System.out.println("getY");
         int i = 0;
         Snake instance = new Snake();
+        instance.initializeGame(30);
         int expResult = 0;
         int result = instance.getY(i);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -115,9 +117,10 @@ public class SnakeTest {
         int a = 0;
         int b = 0;
         Snake instance = new Snake();
+        
         instance.setFood(a, b);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(instance.getFoodX(), a);
+        assertEquals(instance.getFoodY(), b);
     }
 
     /**
