@@ -10,7 +10,12 @@
 <project name="matopeli" default="default" basedir=".">
     <description>Builds, tests, and runs the project matopeli.</description>
     <import file="nbproject/build-impl.xml"/>
-    
+    <target name="SnakeTest">
+        <assert-target-creates-file
+            target="build"
+            file="test/snakegame/SnakeTest.class"
+        />
+    </target>
     <!--
 
     There exist several targets which are by default empty and which can be 
