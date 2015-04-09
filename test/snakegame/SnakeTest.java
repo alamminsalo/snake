@@ -17,6 +17,7 @@ import static org.junit.Assert.*;
  *
  * @author G7719
  */
+
 public class SnakeTest {
     
     public SnakeTest() {
@@ -121,74 +122,6 @@ public class SnakeTest {
         instance.setFood(a, b);
         assertEquals(instance.getFoodX(), a);
         assertEquals(instance.getFoodY(), b);
-    }
-
-    /**
-     * Test of growLenght method, of class Snake.
-     */
-    @org.junit.Test
-    public void testGrowLenght() {
-        System.out.println("growLenght");
-        int i = 0;
-        Snake instance = new Snake();
-        instance.growLenght(i);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getFoodX method, of class Snake.
-     */
-    @org.junit.Test
-    public void testGetFoodX() {
-        System.out.println("getFoodX");
-        Snake instance = new Snake();
-        int expResult = 0;
-        int result = instance.getFoodX();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getFoodY method, of class Snake.
-     */
-    @org.junit.Test
-    public void testGetFoodY() {
-        System.out.println("getFoodY");
-        Snake instance = new Snake();
-        int expResult = 0;
-        int result = instance.getFoodY();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of initializeGame method, of class Snake.
-     */
-    @org.junit.Test
-    public void testInitializeGame() {
-        System.out.println("initializeGame");
-        int SIZE = 0;
-        Snake instance = new Snake();
-        instance.initializeGame(SIZE);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getScore method, of class Snake.
-     */
-    @org.junit.Test
-    public void testGetScore() {
-        System.out.println("getScore");
-        Snake instance = new Snake();
-        int expResult = 0;
-        int result = instance.getScore();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
