@@ -10,5 +10,5 @@ cd snake && ant && java -jar dist/matopeli.jar
 ```
 * clones, compiles and starts the game
 
-Pressing 'A' button turns on the pathfinding algorithm
+Pressing 'A' key toggles the pathfinding algorithm ON/OFF
 
