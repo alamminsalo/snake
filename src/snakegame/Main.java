@@ -10,10 +10,12 @@ package snakegame;
  * @author antti
  */
 public class Main {
+  
+  static int areaSize = 34;
+  static Game game = null;
 
   public static void main(String[] args) {
-    final int areaSize = 40;
-    Game game = new Game();
+    game = new Game();
     game.init(areaSize);
   }
 }
