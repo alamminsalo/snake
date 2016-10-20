@@ -162,7 +162,7 @@ public class GUI {
     screen[game.getHeadX()][game.getHeadY()].setForeground(snColor);
   }
 
-  public void EndAnimation() {                   //lopetusefekti
+  public void endAnimation() {                   //lopetusefekti
     for (int a = 0; a < game.getLenght() - 1; a++) {
       screen[game.getX(a)][game.getY(a)].setForeground(Color.BLACK);
     }

@@ -39,7 +39,7 @@ public class Game {
     for (int i = 0; i < (snake.getLenght() - 3); i++) {
       if (getHeadX() == snake.getX(i) && getHeadY() == snake.getY(i)) {
         checkScore();
-        gui.EndAnimation();
+        gui.endAnimation();
         resetAll();
         break;
       }
@@ -102,7 +102,7 @@ public class Game {
   }
 
   public void forcedReset() {
-    gui.EndAnimation();
+    gui.endAnimation();
     resetAll();
   }
 

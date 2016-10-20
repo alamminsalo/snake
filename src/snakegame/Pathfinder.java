@@ -31,7 +31,7 @@ public class Pathfinder {
   public void initPathfind(int xDest, int yDest){ //reitinhakualgoritmin alku
         createNodeWalls();
         initLists();
-        Pathfind(xDest, yDest);
+        findPath(xDest, yDest);
     }
     
     private void createNodeWalls(){                 //muodostetaan madosta itsestään koostuvat "seinät" jotka jätetään reitinhaussa pois
@@ -57,7 +57,7 @@ public class Pathfinder {
         Openlist[0].startnode = true;
     }
     
-    private void Pathfind(int xDest, int yDest){    //itse reitinhaku algoritmi
+    private void findPath(int xDest, int yDest){    //itse algoritmi
         while(!isPathFound()){
             sortOpenlist();
             if (openlenght < 0 || closedlenght == Math.pow(gui.getGridSize()-2,2)){      //lopetusfunktio, jos reittiä ei löydy
